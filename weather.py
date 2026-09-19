@@ -34,10 +34,10 @@ except ImportError:
 # SECTION 2: YOUR SETTINGS
 # Reads from Environment Variables (useful for GitHub Secrets) or uses defaults.
 # =====================================================================
-GMAIL_USER = os.environ.get("GMAIL_USER", "balaramanperumal91@gmail.com")
-GMAIL_APP_PASSWORD = os.environ.get("GMAIL_APP_PASSWORD", "xpdh dpku ssut fcnq")
-RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "sulochanakumar06@gmail.com")
-EMAIL_SUBJECT = os.environ.get("EMAIL_SUBJECT", "Daily Weather Report \u2013 Cherrapunji, Meghalaya")
+GMAIL_USER = os.environ.get("GMAIL_USER") or "balaramanperumal91@gmail.com"
+GMAIL_APP_PASSWORD = os.environ.get("GMAIL_APP_PASSWORD") or "xpdh dpku ssut fcnq"
+RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL") or "sulochanakumar06@gmail.com"
+EMAIL_SUBJECT = os.environ.get("EMAIL_SUBJECT") or "Daily Weather Report \u2013 Cherrapunji, Meghalaya"
 
 # =====================================================================
 # SECTION 3: FIXED SETTINGS (location, API, SMTP)
