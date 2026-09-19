@@ -35,9 +35,8 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Weather Script
-        env:
-          GMAIL_USER: "balaramanperumal91@gmail.com"
-          GMAIL_APP_PASSWORD: "xpdh dpku ssut fcnq"
-          RECIPIENT_EMAIL: "sulochanakumar06@gmail.com"
         run: |
+          export GMAIL_USER="balaramanperumal91@gmail.com"
+          export GMAIL_APP_PASSWORD="xpdh dpku ssut fcnq"
+          export RECIPIENT_EMAIL="sulochanakumar06@gmail.com"
           python weather.py
